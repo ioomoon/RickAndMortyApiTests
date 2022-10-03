@@ -1,3 +1,7 @@
+"""
+В данном проекте JSON Schema приведена  для примера. Для валидации данных используется Pydantic.
+"""
+
 CHARACTER_SCHEMA = {
     "type": "object",
     "properties": {
