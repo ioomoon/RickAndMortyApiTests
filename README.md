@@ -8,4 +8,4 @@
 - Проверка статус кода при запросе персонажей с фильтром по полю name
 - Проверка статус кода при запросе персонажей с фильтром по полям name и status
 
-![подпись](img/Rick_and_Morty_logo.png)
+<img align="center" src="https://github.com/ioomoon/RickAndMortyApiTests/blob/master/img/Rick_and_Morty_logo.png">
