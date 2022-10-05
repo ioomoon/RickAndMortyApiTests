@@ -22,12 +22,13 @@ allure serve [path_to_report_dir]
 ```
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="20"> Отчеты в Allure Report
+- Графики
 ![](img/Allure_report_5.png "status and severity")
+- Тестовые наборы
 ![](img/Allure_report_2.png "suites")
+- История запуска теста
 ![](img/Allure_report_3.png "retries")
 ![](img/Allure_report_4.png "retries with fail")
-
-
-
+  
 <img align="center" src="https://github.com/ioomoon/RickAndMortyApiTests/blob/master/img/Rick_and_Morty_logo.png">
 
