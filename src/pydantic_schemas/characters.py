@@ -1,4 +1,7 @@
-from pydantic import BaseModel, Field
+from typing import Union
+
+from pydantic import BaseModel, Field, HttpUrl, validator
+from datetime import datetime
 from enum import Enum
 
 
@@ -17,12 +20,24 @@ class Gender(str, Enum):
 
 class Origin(BaseModel):
     name: str
-    url: str
+    url: Union[HttpUrl, str]
+
+    @validator('url')
+    def check_url(cls, v):
+        if isinstance(v, str) and not isinstance(v, HttpUrl):
+            assert v == ''
+        return v
 
 
 class Location(BaseModel):
     name: str
-    url: str
+    url: Union[HttpUrl, str]
+
+    @validator('url')
+    def check_url(cls, v):
+        if isinstance(v, str) and not isinstance(v, HttpUrl):
+            assert v == ''
+        return v
 
 
 class Character(BaseModel):
@@ -34,17 +49,17 @@ class Character(BaseModel):
     gender: Gender
     origin: Origin
     location: Location
-    image: str
-    episode: list
-    url: str
-    created: str
+    image: HttpUrl
+    episode: list[HttpUrl]
+    url: HttpUrl
+    created: datetime
 
 
 class Info(BaseModel):
     count: int = Field(gt=0, le=826)
     pages: int
-    next: str = None
-    prev: str = None
+    next: Union[HttpUrl, None]
+    prev: Union[HttpUrl, None]
 
 
 class Characters(BaseModel):

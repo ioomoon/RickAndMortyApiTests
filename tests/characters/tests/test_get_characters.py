@@ -21,7 +21,7 @@ def test_get_single_character(get_character_by_id):
     Test asserts that the status of response when requesting a single character is 200.
     Validates the data in response.
     """
-    get_character_by_id(1).assert_status_code(200).validate(Character)
+    get_character_by_id(8).assert_status_code(200).validate(Character)
 
 
 @allure.severity(allure.severity_level.CRITICAL)
