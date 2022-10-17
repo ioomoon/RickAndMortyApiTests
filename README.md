@@ -1,8 +1,5 @@
 # Тренировочный проект автотестов на [Rick and Morty API](https://rickandmortyapi.com/)
 
-## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon2.png?raw=true" width="25"> Стек технологий:
-
-
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon5.png?raw=true" width="20"> Реализованы проверки:
 - Проверка статус кода и валидация ответа при запросе 
     - всех персонажей
@@ -34,4 +31,11 @@ allure serve [path_to_report_dir]
 ![](img/Allure_report_3.png "retries")
 ![](img/Allure_report_4.png "retries with fail")
   
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon2.png?raw=true" width="25"> Стек технологий:
+<img src="https://github.com/ioomoon/RickAndMortyApiTests/blob/main/img/python.png?raw=true" width="35">
+<img src="https://github.com/ioomoon/RickAndMortyApiTests/blob/main/img/pycharm.png?raw=true" width="35">
+<img src="https://github.com/ioomoon/RickAndMortyApiTests/blob/main/img/pytest.png?raw=true" width="35">
+<img src="https://github.com/ioomoon/RickAndMortyApiTests/blob/main/img/allure.png?raw=true" width="35">
+<img src="https://github.com/ioomoon/RickAndMortyApiTests/blob/main/img/pydantic.png?raw=true" width="35">
+
 <img align="center" src="https://github.com/ioomoon/RickAndMortyApiTests/blob/master/img/Rick_and_Morty_logo.png">
